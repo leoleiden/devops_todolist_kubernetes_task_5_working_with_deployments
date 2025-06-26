@@ -297,7 +297,7 @@ Why These Numbers: These values are critically important for the correct functio
 
 Limits:
 
-CPU: 500m (0.5 CPU core): Allows the Pod to use more resources when processing requests (providing a "burst" capacity), avoiding throttling, while still controlling its maximum consumption to prevent node overload.
+CPU: 200m (0.2 CPU core): Allows the Pod to use more resources when processing requests (providing a "burst" capacity), avoiding throttling, while still controlling its maximum consumption to prevent node overload.
 
 Memory: 128Mi (128 Megabytes): It is recommended to set memory requests and limits to be equal. This ensures predictable behavior and minimizes the risk of the Pod being prematurely terminated due to out-of-memory (OOMKilled) issues, as memory cannot be overcommitted. The Pod will only be killed if the overall node runs out of memory, which ensures predictable performance.
 
